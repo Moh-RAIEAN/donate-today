@@ -89,6 +89,12 @@ section{
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     font-size: 30px;
+    background-color: #E2E2E2;
+    margin-left: 10px;
+}
+/* we don't need margin left on first element so remove it*/
+.badge:first-of-type{
+    margin-left: 0;
 }
 /* set an active badge */
 .badge.active{
