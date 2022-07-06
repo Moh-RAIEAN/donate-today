@@ -1,0 +1,177 @@
+/* remove default margin and padding and set some default style to the body */
+body{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+}
+/* set the default paragraph color */
+p{
+    color: #707070;
+}
+/* this is header section  */
+/* align horizontal and vertically center */
+.header{
+    color: white;
+    /* make a overlay width gradient */
+    background-image: linear-gradient( rgba(18, 18, 18, .5), rgba(18, 18, 18, 1)), url("./images/donation0.jpg");
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+/* set the heading of header area */
+.header h1{
+    font-size: 65px;
+    font-family: 'Inter', sans-serif;
+        /* remove some space between heading  and paragraph element*/
+    margin-bottom: -1rem;
+}
+.header p{
+    color: white;
+}
+ /* end fo heading are */
+
+/* set the sub heading size */
+h2{
+    font-size: 45px;
+    /* remove some space between secondary heading  and paragraph element*/
+    margin-bottom: -1rem;
+}
+/* set parent element default padding to aligned children element horizontally center*/
+.container{
+    padding: 0 10rem;
+}
+/* our page link's and buttons styles */
+.btn{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-decoration: none;
+    background-color: #FF5959;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    padding: 1rem 1.281rem;
+    display: inline-block;
+}
+/* set some vertical spacing */
+section{
+    margin-bottom: 5rem;
+}
+/* to set child element side by side  */
+.flx-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* this is allow make two element side by side view */
+.half{
+    width: 50%;
+    text-align: left;
+}
+.half img{
+    width: 100%;
+    height: auto;
+}
+/* set the gap between equal width element */
+.space-between{
+    gap: 90px;
+}
+/* this is for uor amount area design */
+.badge{
+    width: auto;
+    padding:25px 30px;
+    max-width: 200px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+/* set an active badge */
+.badge.active{
+    border: 2px solid #FF5959;
+    color:#FF5959;
+}
+/* user input amount area */
+
+/******************************* start ***********************************/
+form{
+    padding-top: 40px;
+    text-align: center;
+}
+form div{
+    font-size: 16px;
+}
+form input[type="number"]{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #707070;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+form input[type="email"]{
+    text-align: center;
+    border: none;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+    background-color: #AA9F9F;
+    color: #D9D9D9;
+}
+form input[type="email"] + .btn{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    font-size: 16px;
+    padding: 9px 15px;
+}
+/********************************end *************************************/
+
+/* design of our card section */
+
+/******************************* start **************************************/
+.card{
+    box-shadow: 3px 5px 15px 0 #707070;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 50px;
+    max-width: 250px;
+    text-align: left;
+    background-color: rgba(79, 157, 166, 0.1);
+    font-size: 16px;
+}
+/* notice that card no two and three content is too small so we need to make them big */
+.card:nth-of-type(2){
+    align-self: stretch;
+    /* set top and left and right side for giving space between card's */
+    margin: 50px 30px 0;
+    background-color: rgba(255, 89, 89, .1);
+}
+.card:nth-of-type(3){
+    align-self: stretch;
+    background-color: #FFF4D6;
+}
+/****************************** card design end *****************************/
+
+/* footer are design */
+footer{
+    background-color: #0B0D17;
+    padding: 30px 0;
+    font-size: 14px;
+/* this will be add some space before footer */
+    margin-top: 100px;
+}
+footer h2{
+    font-family: 'Lobster', cursive;
+    margin-bottom: 0;
+    color: #FF5959;
+    letter-spacing: 2.5px;
+    font-size: 36px;
+    text-transform: capitalize;
+}
