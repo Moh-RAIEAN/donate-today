@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation Website</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!-- google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@700&family=Lobster&family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,7 +22,7 @@
             <h2>Donate Today</h2>
             <p>Let's donate today to rescue them and support them to make a living from this disaster.</p>
             <div class="flx-container">
-                <div class="badge">
+                <div class="badge" id="remove-margin-l">
                     <span>100 tk</span>
                 </div>
                 <div class="badge active">
@@ -55,34 +52,34 @@
                     <h3>Food for a family</h3>
                     <p>Food is one of the basic necessities.we will supply them food.your major donation will be invested here for to supply to them. </p>
                 </div>
-                <div class="card">
+                <div class="card" id="middle">
                     <img src="./icons/shelter.png" alt="">
                     <h3>Shelter for a family</h3>
                     <p>Shelter is another important of our basic necessities.We also work to provide housing for the homeless.</p>
                 </div>
-                <div class="card">
+                <div class="card" id="right">
                     <img src="./icons/Frame-1.png" alt="">
                     <h3>Education for a child</h3>
                     <p>We use your donations to ensure that poor, helpless, talented students can read and write for free of cost.</p>
                 </div>
             </div>
         </section>
-        <section class="flx-container space-between">
-            <div class="half">
+        <section class="flx-container gap">
+            <div class="half padding">
                 <h2>Their lives depends on your donation</h2>
                 <p>With your donations we try to meet the basic needs of the helpless and poor people</p>
                 <p>We cannot meet their basic needs without your grant so they will live a very bad life and will not be able to survive.</p>
                 <a href="#" class="btn">How to Contribute?</a>
             </div>
             <div class="half">
-                <img src="./images/donation10.jpg" alt="  ">
+                <img src="./images/donation0.jpg" alt="  ">
             </div>
         </section>
-        <section class="flx-container space-between">
+        <section class="flx-container gap">
             <div class="half">
                 <img src="./images/donation3.jpg" alt="">
             </div>
-            <div class="half">
+            <div class="half padding">
                 <h2>They needs us to survive</h2>
                 <p>They will not be able to make a living without your grant because they are poor and have no source of income so they basically depend on your grant</p>
                 <p>Without your grant we cannot afford their food, shelter, treatment alone. If you donate we can make their lives easier and we can make their lives happier</p>
@@ -94,7 +91,7 @@
         <form action="#">
             <div class="flx-container">
                 <input type="email" placeholder="Write your email" name="email">
-                <input type="submit" name="submit" value="Subscribe" class="btn">
+                <input type="submit" name="submit" value="Subscribe" class="btn" id="subscribe-btn">
             </div>
         </form>
     </div>
