@@ -63,7 +63,7 @@ h2{
 }
 /* set some vertical spacing */
 section{
-    margin-bottom: 5rem;
+    margin: 5rem 0;
 }
 /* to set child element side by side  */
 .flx-container{
